@@ -2,7 +2,7 @@
 # Hugo 个人技术博客配置（Stack v4 主题）
 # 说明：部署上线时，把 baseURL 改成你的真实域名即可。
 # ============================================================
-baseURL = 'https://your-domain.com/'
+baseURL = 'https://2023304889.github.io/blog/'
 locale = 'zh-cn'
 title = '李杨的技术博客'
 defaultContentLanguage = 'zh-cn'
