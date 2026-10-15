@@ -7,3 +7,8 @@ resources/
 .DS_Store
 Thumbs.db
 *.log
+
+# 部署临时文件
+gh_auth.*
+gh_pid.txt
+*.log
