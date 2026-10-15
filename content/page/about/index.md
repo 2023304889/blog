@@ -2,8 +2,8 @@
 title: 关于我
 slug: "about"
 description: 你好，我是李杨，一名计算机科学专业的学生。
-date: 2026-9-6
-lastmod: 2026-9-6
+date: 2026-09-06
+lastmod: 2026-09-06
 menu:
     main:
         weight: -90
