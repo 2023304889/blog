@@ -1,0 +1,77 @@
+# ============================================================
+# Hugo 个人技术博客配置（Stack v4 主题）
+# 说明：部署上线时，把 baseURL 改成你的真实域名即可。
+# ============================================================
+baseURL = 'https://your-domain.com/'
+locale = 'zh-cn'
+title = '李杨的技术博客'
+defaultContentLanguage = 'zh-cn'
+hasCJKLanguage = true
+theme = 'hugo-theme-stack'
+
+[pagination]
+    pagerSize = 8
+
+[permalinks]
+    post = '/p/:slug/'
+    page = '/:slug/'
+
+# ---------- 全局参数 ----------
+[params]
+    mainSections = ['post']
+    rssFullContent = true
+    # 可选: "default" | "lastmod"
+    sortBy = 'default'
+
+    [params.footer]
+        since = 2026
+        customText = ''
+
+    [params.dateFormat]
+        published = '2006-01-02'
+        lastUpdated = '2006-01-02'
+
+    [params.sidebar]
+        compact = false
+        avatar = ''
+        subtitle = '计算机学习 · 考研笔记 · 编程随笔'
+
+    [params.article]
+        headingAnchor = false
+        math = false
+        toc = true
+        readingTime = true
+
+        [params.article.list]
+            # 列表页（首页/分类）是否展示标签
+            showTags = true
+
+        [params.article.license]
+            enabled = false
+            default = 'Licensed under CC BY-NC-SA 4.0'
+
+    # 侧边栏 / 文章页挂件
+    [params.widgets]
+        homepage = [
+            { type = "search" },
+            { type = "archives", params = { limit = 5 } },
+            { type = "categories", params = { limit = 10 } },
+            { type = "tag-cloud", params = { limit = 10 } },
+        ]
+        page = [{ type = "toc" }]
+
+    [params.colorScheme]
+        toggle = true
+        default = 'auto'
+
+    # 评论功能（需要配置 provider 后开启）
+    [params.comments]
+        enabled = false
+
+# ---------- 社交链接（显示在侧边栏） ----------
+[[menu.social]]
+    identifier = 'github'
+    name = 'GitHub'
+    url = 'https://github.com/'
+    [menu.social.params]
+        icon = 'brand-github'
